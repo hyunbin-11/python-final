@@ -119,7 +119,7 @@ class JobAssistant:
     def show_success_stories(self):
         """합격자소서 출력"""
         # 이 코드에서는 특정 기업의 합격자소서를 사용자에게 제공하기 위해 사용되었습니다.
-        target_companies = ["현대자동차", "넥슨", "LG생활건강", "롯데마트", "삼성전자", "아모레퍼시픽", "기아"]
+        target_companies = ["위지트", "넥슨", "LG생활건강", "롯데마트", "서울우유협동조합합", "아모레퍼시픽", "기아"]
         sector_data = self.manager.sector_data
         # 합격자소서가 제공되는 기업만 필터링합니다.
         available_companies = [c for c in target_companies if c in sector_data['기업명'].unique()]
