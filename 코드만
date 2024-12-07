@@ -48,7 +48,7 @@ class JobAssistant:
     """사용자와 상호작용을 관리하는 클래스"""
     def __init__(self, job_data_manager):
         self.manager = job_data_manager
-        self.target_companies = ["현대자동차", "넥슨", "LG생활건강", "롯데마트", "삼성전자", "아모레퍼시픽", "기아"]
+        self.target_companies = ["위지트", "넥슨", "LG생활건강", "롯데마트", "서울우유협동조합", "아모레퍼시픽", "기아"]
 
     def start(self):
         while True:
@@ -129,12 +129,12 @@ class JobAssistant:
     def show_success_stories(self):
         sector_data = self.manager.get_sector_data()
         company_sector_map = {
-            "현대자동차": "제조 및 생산 기업",
+            "위지트": "제조 및 생산 기업",
             "넥슨": "데이터분석 기업",
             "LG생활건강": "물류 및 SCM기업",
             "기아": "IT 및 기술 개발 기업",
             "롯데마트": "서비스 및 영업 기업",
-            "삼성전자": "경영 지원 및 컨설팅 기업",
+            "서울우유협동조합": "경영 지원 및 컨설팅 기업",
             "아모레퍼시픽": "마케팅 및 기획 기업"
         }
 
